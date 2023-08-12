@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/*navbar*/
+.navbar .hamburger-lines{
+    display: none;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: black;
+    color: #ffffff;
+    opacity: 0.2;
+    height: 60px;
+    z-index: 12;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.logo img{
+    display: block;
+    width: 40px;
+    height: 50px; 
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+.menu-items a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover{
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+}
+
+/*showcase*/
+
+
+.showcase-area{
+    height: 100vh;
+    background: linear-gradient(
+        rgba(240, 240, 240, 0.144),
+        rgba(255, 255, 255, 0.336)
+    );
+    background-image: url(images/home2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50rem;
+    justify-content: center;
+    height: 100%;
+    color:black;
+    font-size: 1.6rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: small;
+}
+
+.btn-primary{
+    color: #779c90;
+    opacity: 0.6;
+    background: #181011;
+    border-radius: 2ch;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-primary :hover{
+    background: #c8fff4;
+    transition: background 0.3s ease-in-out;
+}
+
+/*about*/
+
+#about {
+    padding: 50px 0;
+    background: white;
+}
+
+.about-wrapper{
+display: flex;
+flex-wrap: wrap;
+}
+
+#about h2{
+    font-size: 2.3rem;
+}
+
+#about p{
+    font-size: 1.2rem;
+    color: #423f3f;
+}
+
+#about .small{
+    font-size: 1.2rem;
+    color: rgb(45, 44, 44);
+    font-weight: 600;
+}
+
+.about-img{
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation{
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-img img{
+    display: block;
+    height: 500px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+/*contact*/
+
+#contact{
+    padding: 5rem 0;
+    background: white;
+}
+
+.contact-container{
+    display: flex;
+    background: white;
+}
+
+.contact-img{
+    width: 50%;
+}
+
+.contact-img img{
+    display: block;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.form-container{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+.form-container input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #c3abab;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #f5f0f0;
+    font-weight: 500;
+}
+.form-container textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #dacaca;
+    outline: none;
+    padding: 1rem 0;
+    resize: none;
+}
+
+.form-container h2{
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #121111;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+}
+
+.form-container a{
+    font-size: 1.3rem;
+}
+
+#footer h2{
+    text-align: center;
+    font-size: 1rem;
+    opacity: 1;
+    padding: 2.6rem;
+    font-weight: 500;
+    color: black;
+    background: white;
+}
+
+
+
+
